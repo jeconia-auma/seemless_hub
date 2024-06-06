@@ -1,42 +1,37 @@
 <!-- header section starts -->
-<?php include_once('partials/header.php'); ?>
+<?php
+    include_once('partials/header.php');
+    include_once('config/config.php');
+
+    $sql = "select * from categories";
+    $result = $conn->query($sql);
+?>
 
 <!-- categories section starts  -->
 
 <section class="categories" id="categories">
+    <br><br><br>
 
     <h1 class="heading"> product <span>categories</span> </h1>
 
     <div class="box-container">
+    <?php
+        if($result->num_rows > 0){
+            while($row = $result->fetch_assoc()){
+                ?>
 
-        <div class="box">
-            <img src="image/cat-1.png" alt="">
-            <h3>vegetables</h3>
-            <p>upto 45% off</p>
-            <a href="#" class="btn">shop now</a>
-        </div>
+                        <div class="box">
+                            <img src="<?php echo $row['img']; ?>" alt="">
+                            <h3><?php echo $row['name']; ?></h3>
+                            <p>upto 45% off</p>
+                            <a href="categorizedProducts.php?id=<?php echo $row['id']; ?>" class="btn">shop now</a>
+                        </div>
 
-        <div class="box">
-            <img src="image/cat-2.png" alt="">
-            <h3>fresh fruits</h3>
-            <p>upto 45% off</p>
-            <a href="#" class="btn">shop now</a>
-        </div>
-
-        <div class="box">
-            <img src="image/cat-3.png" alt="">
-            <h3>dairy products</h3>
-            <p>upto 45% off</p>
-            <a href="#" class="btn">shop now</a>
-        </div>
-
-        <div class="box">
-            <img src="image/cat-4.png" alt="">
-            <h3>fresh meat</h3>
-            <p>upto 45% off</p>
-            <a href="#" class="btn">shop now</a>
-        </div>
-
+                        
+                        <?php
+            }
+        }
+        ?>
     </div>
 
 </section>

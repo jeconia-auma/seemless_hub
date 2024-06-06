@@ -17,10 +17,10 @@
 
         <div class="box">
             <h3>contact info</h3>
-            <a href="#" class="links"> <i class="fas fa-phone"></i> +254787654321 </a>
-            <a href="#" class="links"> <i class="fas fa-phone"></i> +254712345678 </a>
-            <a href="#" class="links"> <i class="fas fa-envelope"></i> SeemlessHubGrocery@gmail.com </a>
-            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Nairobi, Kenya - 00100 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +254708301830 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +254708100169 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> jeconiaauma@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Nairobi, Kenya - 21280 - 00100 </a>
         </div>
 
         <div class="box">
@@ -36,8 +36,10 @@
         <div class="box">
             <h3>newsletter</h3>
             <p>subscribe for latest updates</p>
-            <input type="email" placeholder="your email" class="email">
-            <input type="submit" value="subscribe" class="btn">
+            <form action="subscribe.php" method="post" id="newsletter-form">
+                <input type="email" placeholder="your email" class="email" name="email">
+                <input type="submit" value="subscribe" class="btn" name="submit">
+            </form>
             <img src="image/payment.png" class="payment-img" alt="">
         </div>
 
@@ -51,22 +53,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
+<!-- <script src="js/ajax.js"></script> -->
 
 </body>
 </html>
