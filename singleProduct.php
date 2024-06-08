@@ -25,7 +25,7 @@
                             <img src="<?php echo $row['img1']; ?>" alt="">
                             <h3><?php echo $row['title']; ?></h3>
                             <p>Ksh. <?php echo $row['price']; ?> /=</p>
-                            <a href="#" class="btn">add to cart</a>
+                            <a href="cart.php/?id=<?php echo $row['id']; ?>" class="btn">add to cart</a>
                         </div>
                     <?php
                 }

@@ -89,7 +89,7 @@
 
         <!--totals for items in shopping cart-->
 
-        <div class="total"> total :  Ksh. <?php if(isset($amount)){echo $amount;} ?>/- </div>
+        <div class="total"> total :  Ksh. <?php if(isset($amount)){echo $amount; }?>/- </div>
             <a href="checkout.php?checkout=<?php echo $_SESSION['login']; ?>" class="btn">checkout</a>
         </div>
 

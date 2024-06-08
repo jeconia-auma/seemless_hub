@@ -17,8 +17,8 @@
 
         <div class="box">
             <h3>contact info</h3>
-            <a href="#" class="links"> <i class="fas fa-phone"></i> +254708301830 </a>
-            <a href="#" class="links"> <i class="fas fa-phone"></i> +254708100169 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +254712345678 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +254798765432 </a>
             <a href="#" class="links"> <i class="fas fa-envelope"></i> jeconiaauma@gmail.com </a>
             <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Nairobi, Kenya - 21280 - 00100 </a>
         </div>
